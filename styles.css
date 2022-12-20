@@ -44,7 +44,7 @@ body {
   background-image: url("images/bg-pattern-top.svg"),
     url("images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
-  background-position: top -70vw left -50vw, bottom -70vw right -40vw;
+  background-position: top -50vw left -50vw, bottom -70vw right -40vw;
   font-family: "Kumbh Sans", sans-serif;
   overflow: hidden;
 }
