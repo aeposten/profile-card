@@ -1,0 +1,126 @@
+/* 
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+font-family: 'Kumbh Sans', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Variables for color */
+:root {
+    --dkcyan: hsl(185, 75%, 39%);
+    --dsblue: hsl(229, 23%, 23%);
+    --slate: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%);
+    --ltgray:  hsl(0, 0%, 80%);
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dkcyan);
+    background-size: 100%, 100%;
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: top -50vw left -50vw, bottom -30vw right -40vw;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+
+
+main {
+    width: 87%;
+    max-width: 22em;
+
+    z-index: 10;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-image: url("images/bg-pattern-card.svg");
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 0.25em solid white;
+    transform: translateY(50%);
+}
+
+h1 {
+    margin-top: 2em;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.age {
+   font-weight: 400;
+   color: var(--gray) 
+}
+
+.location {
+    width: 100%;
+    border-bottom: 0.1em solid var(--ltgray);
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray)
+}
+
+.profile-stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2.56em;
+    margin-right: 3.25em;
+    margin-bottom: 1.5em;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+}
+
+.stat-num {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.stat-txt {
+    font-size: 0.625rem;
+    color: var(--gray);
+    letter-spacing: 0.2em;
+}
